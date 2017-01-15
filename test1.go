@@ -9,12 +9,12 @@ import (
 
 type EmailUser struct {
     Username, Password, 
-    EmailServer string 
+    EmailServer string
     Port int
 }
 
 
-const emailTemplate = `From curry`
+const emailTemplate = `From someone`
 func main() {
     eu := &EmailUser{"my@email.com", "PASSWORDr", "smtp.gmail.com", 587}
     auth := smtp.PlainAuth("", eu.Username, eu.Password, eu.EmailServer)
