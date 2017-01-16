@@ -16,9 +16,13 @@ type EmailUser struct {
 
 const emailTemplate = `From someone`
 func main() {
-    eu := &EmailUser{"my@email.com", "PASSWORD", "smtp.gmail.com", 587}
+	msg := "MIME-Version: 1.0" + " \r\n" +
+		"Content-type: text/html" + "\r\n" +
+		"Subject: subject goes here" + "\r\n\r\n" +
+		"message goes here" + "\r\n"
+    eu := &EmailUser{"benobrien705@gmail.com", "nqjslvzgamidktur", "smtp.gmail.com", 587}
     auth := smtp.PlainAuth("", eu.Username, eu.Password, eu.EmailServer)
-    err := smtp.SendMail(eu.EmailServer+":"+strconv.Itoa(eu.Port), auth, eu.Username, []string{"email@email.com"}, []byte("hello"))
+    err := smtp.SendMail(eu.EmailServer+":"+strconv.Itoa(eu.Port), auth, eu.Username, []string{"ben.obrien000@gmail.com"}, []byte(msg))
     if err != nil {
         log.Fatal(err)
     }
