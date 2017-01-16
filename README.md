@@ -12,7 +12,7 @@ Go-EZmail is simple and mostly useless on its own, but is great for use in bigge
 
 To use Go-EZmail by its self:
 
-1. Install by running `git clone https://github.com/benobro/go-ezmail/` *from your Go workspace* (make sure you already [have Go installed](https://golang.org/doc/install)) 
+1. Install by running `git clone https://github.com/benobro/go-ezmail/` **from your Go workspace** (make sure you already [have Go installed](https://golang.org/doc/install)) 
 2. Make the neccessary changes to `go-ezmail.go` (to configure sender and reciever, message/subject, and server/port if needed) 
 3. `go run go-ezmail.go` or `/.go-ezmail` to run - if there's no output, it has been run successfully 
 
@@ -24,4 +24,4 @@ Notes
 If you're using Gmail, you need to make sure turn on [less secure apps access](https://support.google.com/accounts/answer/6010255?hl=en)
 The default port is 587 (TLS) which works with Gmail - make sure to change it if as needed if you're using a different email service 
 
-Go-EZmail is written by Ben O'Brien [(@benobr)o](https://github.com/benobro). 
+Go-EZmail is written by Ben O'Brien [(@benobro)](https://github.com/benobro). 
