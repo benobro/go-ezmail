@@ -1,4 +1,4 @@
-# Go-EZmail - a simple Go program to send email (from Gmail or otherwise) 
+# Go-EZmail - a *simple* Go program to send email (from Gmail or otherwise) 
 
 Intro
 -----
